@@ -1,10 +1,127 @@
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
 
-*{
-    padding: 0;
-    margin: 0;
+:root {
+    --orange: rgb(254, 163, 1);
+    --sky-blue: rgb(1, 172, 253);
+    --aqua-blue: rgb(5, 212, 223);
+    --lotus-blue: rgb(93, 88, 239);
+    --greenyellow: rgb(149, 178, 38);
+    --dark: rgb(32, 32, 32);
+    --darker: rgb(17, 17, 17);
+    --light-gray: rgb(102, 102, 102);
+
+
 }
 
-body{
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
     font-family: "Quicksand", serif;
 }
+
+/* header style start */
+.header-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 40px 0;
+
+}
+
+.logo-area {
+    display: flex;
+    align-items: center;
+    gap: 11px;
+}
+
+.logo-area img {
+    height: 62px;
+    width: 62px;
+}
+
+.logo-text {
+    color: rgb(17, 17, 17);
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 30px;
+}
+
+.nav-link {
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 30px;
+    text-decoration: none;
+    padding: 10px 16px;
+}
+
+.nav-link:hover {
+    background-color: var(--orange);
+    color: white;
+}
+
+.nav-link[active] {
+    font-weight: 700;
+}
+
+/* header style end */
+
+/* hero section style start */
+.hero-section {
+    display: flex;
+    align-items: center;
+    gap: 64px;
+}
+
+.hero-section .banner-left {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    align-items: flex-start;
+}
+
+.hero-section .banner-left .banner-text {
+    width: 70%;
+    font-size: 20px;
+
+}
+
+.hero-section .banner-right {}
+
+/* hero section style end */
+
+/* standard-curriculum style start */
+.standard-curriculum {
+    background-image: url(./../assets/bg.png);
+}
+
+.standard-curriculum .curriculum-cards {
+    display: flex;
+    gap: 28px;
+}
+
+.standard-curriculum .curriculum-cards .card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 32px;
+    padding: 62px 40px;
+    border-radius: 18.86px;
+    box-shadow: inset 0px 0px 28.3px 0.94px rgba(0, 0, 0, 0.05);
+    background: linear-gradient(180.00deg, rgb(222, 245, 255), rgba(255, 255, 255, 0) 40%), rgb(255, 255, 255);
+}
+.standard-curriculum .curriculum-cards .card p{
+    font-weight: 500;
+    line-height: 28px;
+    text-align: center;
+}
+.standard-curriculum .curriculum-cards .card a{
+    text-decoration: none;
+    font-weight: 700;
+}
+
+/* standard-curriculum style end */

@@ -1,0 +1,61 @@
+.container {
+    max-width: 1480px;
+    margin: 0 auto;
+}
+
+.text-orange {
+    color: var(--orange);
+}
+
+.text-sky {
+    color: var(--sky-blue);
+}
+
+.text-aqua {
+    color: var(--aqua-blue);
+}
+
+.text-lotus {
+    color: var(--lotus-blue);
+}
+
+.button-primary {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+    font-weight: 600;
+    background-color: var(--darker);
+    padding: 10px 48px;
+    border-radius: 12px;
+}
+
+.button-orange {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+    font-weight: 600;
+    background-color: var(--orange);
+    padding: 10px 48px;
+    border-radius: 12px;
+}
+
+.banner-title {
+    Font-weight: 700;
+    Font-size: 56px;
+    line-height: 61px;
+}
+
+.section-title {
+    font-size: 46px;
+    font-weight: 700;
+    line-height: 57.5px;
+    margin: 60px auto;
+    text-align: center;
+}
+
+.card-title {
+    color: rgb(32, 32, 32);
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 30.65px;
+}
