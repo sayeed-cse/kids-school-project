@@ -108,6 +108,7 @@ body {
 }
 
 .curriculum-cards .card {
+    flex: 1;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -165,7 +166,13 @@ body {
 }
 
 /* standard-curriculum style end */
-
+.marquee-section{
+    border: 1px solid var(--light-gray);
+    padding: 10px;
+    font-size: 20px;
+    font-weight: 500;
+    color: var(--orange);
+}
 /* our stories section start */
 .our-stories {
     background: url(./../assets/bg.png), linear-gradient(0.00deg, rgba(254, 163, 1, 0.3), rgba(255, 255, 255, 0.3) 100%);
@@ -384,6 +391,10 @@ footer .right div {
         flex-direction: column;
         gap: 22px;
         margin: 0 16px;
+    }
+    .marquee-section {
+        padding: 10px;
+        margin: 20px 16px;
     }
     .our-stories .stories {
         grid-template-columns: repeat(2, 1fr);
