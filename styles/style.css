@@ -67,6 +67,10 @@ body {
     font-weight: 700;
 }
 
+.button-bars {
+    display: none;
+}
+
 /* header style end */
 
 /* hero section style start */
@@ -112,32 +116,39 @@ body {
     padding: 62px 40px;
     border-radius: 18.86px;
     box-shadow: inset 0px 0px 28.3px 0.94px rgba(0, 0, 0, 0.05);
-   
+
 }
-.curriculum-cards .card:first-child{
+
+.curriculum-cards .card:first-child {
     background: linear-gradient(180.00deg, rgb(222, 245, 255), rgba(255, 255, 255, 0) 40%), rgb(255, 255, 255);
 }
-.curriculum-cards .card:nth-child(2n){
-    background: linear-gradient(180.00deg, rgb(255, 244, 220),rgba(255, 255, 255, 0) 40%),rgb(255, 255, 255);
+
+.curriculum-cards .card:nth-child(2n) {
+    background: linear-gradient(180.00deg, rgb(255, 244, 220), rgba(255, 255, 255, 0) 40%), rgb(255, 255, 255);
 }
-.curriculum-cards .card:last-child{
-    background: linear-gradient(180.00deg, rgb(238, 225, 255),rgba(255, 255, 255, 0) 40%),rgb(255, 255, 255);
+
+.curriculum-cards .card:last-child {
+    background: linear-gradient(180.00deg, rgb(238, 225, 255), rgba(255, 255, 255, 0) 40%), rgb(255, 255, 255);
 }
-.curriculum-cards .card p{
+
+.curriculum-cards .card p {
     font-weight: 500;
     line-height: 28px;
     text-align: center;
 }
-.curriculum-cards .card a{
+
+.curriculum-cards .card a {
     text-decoration: none;
     font-weight: 700;
 }
-.standard-curriculum .slider-button{
+
+.standard-curriculum .slider-button {
     display: flex;
     justify-content: center;
     gap: 10px;
 }
-.standard-curriculum .slider-button a{
+
+.standard-curriculum .slider-button a {
     font-size: 24px;
     height: 60px;
     width: 60px;
@@ -152,46 +163,53 @@ body {
     margin-bottom: 60px;
 
 }
+
 /* standard-curriculum style end */
 
 /* our stories section start */
-.our-stories{
-    background: url(./../assets/bg.png),linear-gradient(0.00deg, rgba(254, 163, 1, 0.3),rgba(255, 255, 255, 0.3) 100%);
+.our-stories {
+    background: url(./../assets/bg.png), linear-gradient(0.00deg, rgba(254, 163, 1, 0.3), rgba(255, 255, 255, 0.3) 100%);
 }
-.our-stories .stories{
+
+.our-stories .stories {
     display: grid;
-    grid-template-columns: repeat(4,1fr);
+    grid-template-columns: repeat(4, 1fr);
     grid-template-rows: auto;
     gap: 18px;
 }
-.our-stories .stories .story-1{
+
+.our-stories .stories .story-1 {
     grid-column: span 2;
     grid-row: span 2;
 }
-.our-stories .stories .story{
+
+.our-stories .stories .story {
     border-radius: 16px;
     background-color: white;
 }
-.story .story-heading{
+
+.story .story-heading {
     display: flex;
     flex-direction: column;
     height: 177px;
-    position: relative;  
+    position: relative;
 
 
 }
-.story-1 .story-heading{
-    height: 350px; 
+
+.story-1 .story-heading {
+    height: 350px;
 
 }
 
-.story-heading img{
+.story-heading img {
     height: 100%;
     width: 100%;
     object-fit: cover;
     border-radius: 16px 16px 0 0;
 }
-.story .story-heading time{
+
+.story .story-heading time {
     color: white;
     background-color: var(--sky-blue);
     padding: 14px 20px;
@@ -201,78 +219,220 @@ body {
     left: 38px;
 
 }
-.story-1 .story-heading time{
-    top: 328px;
 
+.story-1 .story-heading time {
+    top: 328px;
+    background-color: var(--aqua-blue);
 }
-.story .story-body{
+.story:nth-child(2n) .story-heading time{
+    background-color: var(--greenyellow);
+}
+.story:nth-child(3n) .story-heading time{
+    background-color: var(--lotus-blue);
+}
+.story:nth-child(4n) .story-heading time{
+    background-color: var(--orange);
+}
+.story .story-body {
     padding: 34px 38px;
 }
-.story-body .card-title{
+
+.story-body .card-title {
     margin-top: 22px;
 }
-.story .story-body p{
+
+.story .story-body p {
     margin-top: 50px;
     font-weight: 500;
     font-size: 16px;
     line-height: 30px;
     color: var(--light-gray);
 }
-.story-body h6{
+
+.story-body h6 {
     font-weight: 700;
     font-size: 16px;
     margin-top: 22px;
 }
-.view-all{
+
+.view-all {
     text-align: center;
     padding-top: 80px;
     padding-bottom: 80px;
 }
+
 /* our stories section end */
 
 /* footer style start */
-footer{
+footer {
     background-color: var(--sky-blue);
-    color:white;
+    color: white;
     padding: 120px 0;
 }
-footer .container{
+
+footer .container {
     display: flex;
     gap: 174px;
 }
-footer .left div{
+
+footer .left div {
     display: flex;
     align-items: center;
     gap: 10px;
     margin-bottom: 32px;
 }
-footer .left img{
+
+footer .left img {
     height: 80px;
 }
-footer .left h3{
+
+footer .left h3 {
     font-size: 42px;
     font-weight: 700;
 }
-footer h5{
+
+footer h5 {
     font-size: 24px;
     font-weight: 700;
     margin-bottom: 32px;
     white-space: nowrap;
 }
-footer nav{
+
+footer nav {
     display: flex;
     flex-direction: column;
     gap: 20px;
 }
-footer nav a{
+
+footer nav a {
     text-decoration: none;
     color: white;
     font-size: 20px;
     font-weight: 500;
 }
-footer .right div{
+
+footer .right div {
     display: flex;
     gap: 10px;
 }
 
 /* footer style end */
+
+/* responsive start */
+
+@media screen and (max-width : 768px) {
+
+    .logo-area .logo-text,
+    .stories .story-1,
+    .header-section nav,
+    .header-section .nav-button .button-orange,
+    .standard-curriculum .slider-button {
+        display: none;
+    }
+    .header-section {
+        display: flex;
+        align-items: center;
+        /* justify-content: space-around; */
+        padding:20px;
+        border-bottom: 2px solid var(--orange);
+    }
+    .button-bars {
+        display: block;
+        font-size: 30px;
+    }
+
+    .hero-section .container {
+        align-items: center;
+        justify-content: center;
+        flex-direction: column-reverse;
+        gap: 48px;
+        text-align: center;
+        padding: 20px;
+    }
+    .hero-section .banner-right {
+        width: 95%;
+        
+    }
+    .hero-section .banner-right img {
+        width: 100%;
+    }
+    .hero-section .banner-left {
+        flex-direction: column;
+        gap: 24px;
+        align-items: center;
+    }
+
+    .banner-title {
+        Font-weight: 700;
+        Font-size: 32px;
+        line-height: 51px;
+
+    }
+
+    .hero-section .banner-left .banner-text {
+        width: 100%;
+        font-size: 20px;
+    }
+
+    .section-title {
+        font-size: 26px;
+        font-weight: 700;
+        line-height: 57.5px;
+        margin: 30px auto;
+        text-align: center;
+    }
+
+    .standard-curriculum .curriculum-cards {
+        flex-direction: column;
+        gap: 22px;
+        margin: 0 16px;
+    }
+    .our-stories .stories {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 12px;
+        margin: 0 16px;
+
+    }
+    .our-stories .stories .story {
+        border-radius: 10px;
+    }
+    .story .story-heading {
+        height: 108px;
+    }
+    .story .story-heading time {
+        padding: 5px 12px;
+        font-size: 10px;
+        top: 96px;
+        left: 20px;
+    }
+    .story .story-body {
+        padding: 18px;
+    }
+    .story-body h6 {
+        font-size: 10px;
+        margin-top: 20px;
+    }
+    .view-all {
+            padding-top: 32px;
+        padding-bottom: 42px;
+    }
+    footer {
+        background-color: var(--sky-blue);
+        color: white;
+        padding: 65px 17px;
+    }
+    footer .container {
+        flex-direction: column;
+        gap: 32px;
+    }
+    footer h5 {
+        font-size: 20px;
+        margin-bottom: 20px;
+    }
+    footer nav {
+        gap: 16px;
+    }
+    footer nav a {
+        font-size: 16px;
+    }
+}
