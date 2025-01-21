@@ -330,9 +330,6 @@ footer .right div {
         display: none;
     }
     .header-section {
-        display: flex;
-        align-items: center;
-        /* justify-content: space-around; */
         padding:20px;
         border-bottom: 2px solid var(--orange);
     }
@@ -378,7 +375,8 @@ footer .right div {
         font-size: 26px;
         font-weight: 700;
         line-height: 57.5px;
-        margin: 30px auto;
+        margin-bottom: 30px;
+        margin-top: 60px ;
         text-align: center;
     }
 
