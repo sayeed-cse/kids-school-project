@@ -9,8 +9,6 @@
     --dark: rgb(32, 32, 32);
     --darker: rgb(17, 17, 17);
     --light-gray: rgb(102, 102, 102);
-
-
 }
 
 * {
@@ -28,8 +26,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 40px 0;
-
+    padding: 40px 20px;
 }
 
 .logo-area {
@@ -93,8 +90,6 @@ body {
 
 }
 
-.hero-section .banner-right {}
-
 /* hero section style end */
 
 /* standard-curriculum style start */
@@ -117,7 +112,7 @@ body {
     padding: 62px 40px;
     border-radius: 18.86px;
     box-shadow: inset 0px 0px 28.3px 0.94px rgba(0, 0, 0, 0.05);
-
+    text-align: center;
 }
 
 .curriculum-cards .card:first-child {
@@ -162,17 +157,17 @@ body {
     text-decoration: none;
     margin-top: 80px;
     margin-bottom: 60px;
-
 }
 
 /* standard-curriculum style end */
-.marquee-section{
+.marquee-section {
     border: 1px solid var(--light-gray);
     padding: 10px;
     font-size: 20px;
     font-weight: 500;
     color: var(--orange);
 }
+
 /* our stories section start */
 .our-stories {
     background: url(./../assets/bg.png), linear-gradient(0.00deg, rgba(254, 163, 1, 0.3), rgba(255, 255, 255, 0.3) 100%);
@@ -200,13 +195,10 @@ body {
     flex-direction: column;
     height: 177px;
     position: relative;
-
-
 }
 
 .story-1 .story-heading {
     height: 350px;
-
 }
 
 .story-heading img {
@@ -224,22 +216,25 @@ body {
     position: absolute;
     top: 155px;
     left: 38px;
-
 }
 
 .story-1 .story-heading time {
     top: 328px;
     background-color: var(--aqua-blue);
 }
-.story:nth-child(2n) .story-heading time{
+
+.story:nth-child(2n) .story-heading time {
     background-color: var(--greenyellow);
 }
-.story:nth-child(3n) .story-heading time{
+
+.story:nth-child(3n) .story-heading time {
     background-color: var(--lotus-blue);
 }
-.story:nth-child(4n) .story-heading time{
+
+.story:nth-child(4n) .story-heading time {
     background-color: var(--orange);
 }
+
 .story .story-body {
     padding: 34px 38px;
 }
@@ -326,8 +321,7 @@ footer .right div {
 /* footer style end */
 
 /* responsive start */
-
-@media screen and (max-width : 768px) {
+@media screen and (max-width : 1024px) {
 
     .logo-area .logo-text,
     .stories .story-1,
@@ -336,10 +330,137 @@ footer .right div {
     .standard-curriculum .slider-button {
         display: none;
     }
+
+    .container {
+        padding: 0 16px;
+    }
+
+    .section-title {
+        font-size: 42px;
+        margin: 48px auto;
+    }
+
     .header-section {
-        padding:20px;
+        padding: 20px;
         border-bottom: 2px solid var(--orange);
     }
+
+    .button-bars {
+        display: block;
+        font-size: 48px;
+    }
+
+    .banner-title {
+        Font-weight: 700;
+        Font-size: 36px;
+        line-height: 51px;
+
+    }
+
+    .hero-section .container {
+        gap: 30px;
+    }
+
+    .hero-section .banner-left {
+        flex: 1;
+    }
+
+    .hero-section .banner-right {
+        flex: 1;
+    }
+
+    .hero-section .banner-right img {
+        width: 100%;
+    }
+
+    .standard-curriculum .curriculum-cards {
+        gap: 16px;
+    }
+
+    .curriculum-cards .card {
+
+        gap: 20px;
+        padding: 32px 16px;
+
+    }
+
+    .curriculum-cards .card p {
+        line-height: 22px;
+    }
+
+    .card-title {
+        font-size: 18px;
+        line-height: 26.65px;
+    }
+
+    .marquee-section.container {
+        margin-top: 30px;
+        padding: 16px;
+    }
+
+    .our-stories .stories {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 16px;
+    }
+
+    .view-all {
+        padding-top: 56px;
+        padding-bottom: 64px;
+    }
+
+    footer {
+        padding: 96px 24px;
+    }
+
+    footer .container {
+        gap: 32px;
+        padding: 0;
+    }
+
+    footer nav {
+        gap: 12px;
+    }
+
+    footer .left {
+        width: 40%;
+    }
+
+    footer .left div {
+        gap: 8px;
+        margin-bottom: 20px;
+    }
+
+    footer .left h3 {
+        font-size: 28px;
+    }
+
+    footer h5 {
+        font-size: 20px;
+        margin-bottom: 28px;
+    }
+
+    footer .right div {
+        flex-wrap: wrap;
+    }
+}
+
+
+
+@media screen and (max-width : 576px) {
+
+    .logo-area .logo-text,
+    .stories .story-1,
+    .header-section nav,
+    .header-section .nav-button .button-orange,
+    .standard-curriculum .slider-button {
+        display: none;
+    }
+
+    .header-section {
+        padding: 20px;
+        border-bottom: 2px solid var(--orange);
+    }
+
     .button-bars {
         display: block;
         font-size: 30px;
@@ -351,15 +472,17 @@ footer .right div {
         flex-direction: column-reverse;
         gap: 48px;
         text-align: center;
-        padding: 20px;
+        padding: 16px;
     }
+
     .hero-section .banner-right {
         width: 95%;
-        
     }
+
     .hero-section .banner-right img {
         width: 100%;
     }
+
     .hero-section .banner-left {
         flex-direction: column;
         gap: 24px;
@@ -368,9 +491,8 @@ footer .right div {
 
     .banner-title {
         Font-weight: 700;
-        Font-size: 32px;
-        line-height: 51px;
-
+        Font-size: 28px;
+        line-height: 44px;
     }
 
     .hero-section .banner-left .banner-text {
@@ -383,64 +505,77 @@ footer .right div {
         font-weight: 700;
         line-height: 57.5px;
         margin-bottom: 30px;
-        margin-top: 60px ;
+        margin-top: 48px;
         text-align: center;
     }
 
     .standard-curriculum .curriculum-cards {
         flex-direction: column;
         gap: 22px;
-        margin: 0 16px;
     }
     .marquee-section {
+        font-size: 16px;
+    }
+    .marquee-section.container {
         padding: 10px;
         margin: 20px 16px;
     }
+
     .our-stories .stories {
         grid-template-columns: repeat(2, 1fr);
         gap: 12px;
-        margin: 0 16px;
-
     }
+
     .our-stories .stories .story {
         border-radius: 10px;
     }
+
     .story .story-heading {
         height: 108px;
     }
+
     .story .story-heading time {
         padding: 5px 12px;
         font-size: 10px;
         top: 96px;
         left: 20px;
     }
+
     .story .story-body {
         padding: 18px;
     }
+
     .story-body h6 {
         font-size: 10px;
         margin-top: 20px;
     }
+
     .view-all {
-            padding-top: 32px;
+        padding-top: 32px;
         padding-bottom: 42px;
     }
+
     footer {
         background-color: var(--sky-blue);
         color: white;
         padding: 65px 17px;
     }
+
     footer .container {
         flex-direction: column;
         gap: 32px;
+        padding: 0;
     }
+
     footer h5 {
         font-size: 20px;
         margin-bottom: 20px;
     }
+
     footer nav {
         gap: 16px;
     }
+
     footer nav a {
         font-size: 16px;
     }
